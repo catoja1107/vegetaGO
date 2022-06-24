@@ -100,12 +100,10 @@ import (
 	)
 
 func main() {
-  test := "World!"
-  fmt.Println("Hello %v\n", test)
   
   argsWithProg := os.Args
   argsWithoutProg := os.Args[1:]
   
   vegeta(os.Args[]) //library includes return.
-  
+	fmt.Printf("Executed with args: %v\n", argsWithProg)
 }
